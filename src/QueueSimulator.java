@@ -14,6 +14,7 @@ public class QueueSimulator {
             int X = random.nextInt(100);
             int elements = random.nextInt(3) + 1;
             if (X % 2 == 0) {
+                // int elements = random.nextInt(3) + 1;
                 for (int i = 0; i < elements; i++) {
                     if (queue.isFull()) {
                         break;
@@ -22,6 +23,7 @@ public class QueueSimulator {
                     queue.enqueue(elem);
                 }
             } else {
+                // int elements = random.nextInt(3) + 1;
                 for (int i = 0; i < elements; i++) {
                     if (queue.isEmpty()) {
                         break;
